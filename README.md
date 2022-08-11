@@ -23,4 +23,3 @@ O projeto conta com os Seeders dos usuários
 | /count/historic| POST | ✔ | Rota para mostrar todas as movimentações do usuário | soma de todas as movimentações (débito, crédito e estorno) mais o saldo inicial do usuário|
 | /historic| POST| ✔ | X  | Rota para mostrar histórico do usuário |
 | /historic/:id| POST| ✔ | ID do usuário  | Rota para mostrar histórico de um usuário através de seu ID|
-| ------------------- | ------------------- | ---------------------  | -------------------------- |  -------------------|
