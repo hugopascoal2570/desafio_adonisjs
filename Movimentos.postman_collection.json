@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "30118ffe-85fc-4550-8faf-f95c31c120a1",
+		"name": "Movimentos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17371828"
+	},
+	"item": [
+		{
+			"name": "Deposit value",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Nw.Vu5uCWw9EW2s52yyf8F0-AlJQkfpd7--fU8cjIjlWcEOxxXIo_bzzO3WRfsF",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"value\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api_url}}/deposit/:value",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"deposit",
+						":value"
+					],
+					"variable": [
+						{
+							"key": "value",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refund value",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NQ._gSQXCCQOOVawx6Ap4cvhg5VUXhVaJRhh0lBCwMbPXRrRAGjvUAX26S_H9lk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"value\":2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api_url}}/refund/:value",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"refund",
+						":value"
+					],
+					"variable": [
+						{
+							"key": "value",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "debit value",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NQ._gSQXCCQOOVawx6Ap4cvhg5VUXhVaJRhh0lBCwMbPXRrRAGjvUAX26S_H9lk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"value\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api_url}}/debit/:value",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"debit",
+						":value"
+					],
+					"variable": [
+						{
+							"key": "value",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

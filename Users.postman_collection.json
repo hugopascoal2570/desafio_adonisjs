@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "6d8a8d3d-9384-4905-a52a-8c6a198936d0",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17371828"
+	},
+	"item": [
+		{
+			"name": "find all users by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Nw.Vu5uCWw9EW2s52yyf8F0-AlJQkfpd7--fU8cjIjlWcEOxxXIo_bzzO3WRfsF",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/users",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find user By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NQ._gSQXCCQOOVawx6Ap4cvhg5VUXhVaJRhh0lBCwMbPXRrRAGjvUAX26S_H9lk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/user/:id",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"user",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user by Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Nw.Vu5uCWw9EW2s52yyf8F0-AlJQkfpd7--fU8cjIjlWcEOxxXIo_bzzO3WRfsF",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/user/delete/:id",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"user",
+						"delete",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show all historic user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Nw.Vu5uCWw9EW2s52yyf8F0-AlJQkfpd7--fU8cjIjlWcEOxxXIo_bzzO3WRfsF",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/historic/:id",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"historic",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete historic by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Nw.Vu5uCWw9EW2s52yyf8F0-AlJQkfpd7--fU8cjIjlWcEOxxXIo_bzzO3WRfsF",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":29\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api_url}}/value/delete/:id",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"value",
+						"delete",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "export all",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "MTA.fgrWF9M8aLei6e8lwl_PeaVfgBi9NTNk-L6yP0qwFAcS_Q372M5yu_ElbZQX",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/export/all",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"export",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
