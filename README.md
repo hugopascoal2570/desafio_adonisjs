@@ -20,6 +20,6 @@ O projeto conta com os Seeders dos usuários
 | /refund/:value| POST| ✔ | valor para retornar saldo da conta  | Rota para retornar créditos um usuário específico através de seu ID |
 | /historic/delete/:id| DELETE| ✔ | id do histórico  | Rota para deletar histórico do usuário através de seu ID|
 | /export| POST| ✔ | tipo de verificação. tipos: all,monthYear ou Days  | Rota exportação do arquivo csv|
-| /count/historic| POST | ✔ | Rota para mostrar todas as movimentações do usuário |
+| /count/historic| POST | ✔ | Rota para mostrar todas as movimentações do usuário | soma de todas as movimentações (débito, crédito e estorno) mais o saldo inicial do usuário|
 | /historic| POST| ✔ | X  | Rota para mostrar histórico do usuário |
 | /historic/:id| POST| ✔ | ID do usuário  | Rota para mostrar histórico de um usuário através de seu ID|
