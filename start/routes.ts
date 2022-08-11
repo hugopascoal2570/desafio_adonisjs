@@ -29,7 +29,7 @@ Route.group(() => {
   Route.post('/refund/:value', 'TransactionsController.refund')
 
   // Criar um endpoint onde seja possível excluir uma movimentação relacionada a um usuário;
-  Route.delete('/value/delete/:id', 'TransactionsController.deleteHistoric')
+  Route.delete('/historic/delete/:id', 'TransactionsController.deleteHistoric')
 
   //rotas de export
   Route.post('/export/', 'TransactionsController.export')
